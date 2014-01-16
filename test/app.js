@@ -65,6 +65,7 @@ describe('App', function () {
                 'README.md',
                 'bower.json',
                 'index.js',
+                'delegate.js',
                 'package.json',
                 'config/app.json',
                 'config/middleware.json',

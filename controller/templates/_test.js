@@ -3,10 +3,9 @@
 'use strict';
 
 
-var app = require('../index'),
+var app = require('../delegate'),
     kraken = require('kraken-js'),
-    request = require('supertest'),
-    assert = require('assert');
+    request = require('supertest');
 
 
 describe('<%= _.slugify(name) %>', function () {

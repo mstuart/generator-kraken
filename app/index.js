@@ -129,6 +129,7 @@ Generator.prototype.app = function app() {
 
 Generator.prototype.projectfiles = function projectfiles() {
     this.copy('index.js', 'index.js');
+    this.copy('delegate.js', 'delegate.js');
     this.copy('gitignore', '.gitignore');
     this.copy('nodemonignore', '.nodemonignore');
     this.copy('jshintignore', '.jshintignore');
