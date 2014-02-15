@@ -9,7 +9,11 @@
 //        "csrf": true,
 //        "csp": false,
 //        "p3p": false,
-//        "xframe": "SAMEORIGIN"
+//        "xframe": "SAMEORIGIN",
+//        "hsts": {
+//          "maxAge": 31536000,
+//          "includeSubDomains": true
+//        }
 //      },
 //
 //      "compiler": {
