@@ -36,6 +36,20 @@ var Generator = module.exports = function Generator(args, options, config) {
         }
     });
 
+    this.hookFor('kraken:template', {
+        args: args,
+        options: {
+            options: options
+        }
+    });
+
+    this.hookFor('kraken:locale', {
+        args: args,
+        options: {
+            options: options
+        }
+    });
+
     this.auth = options.auth;
     this.json = options.json;
 };
