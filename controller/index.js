@@ -29,6 +29,13 @@ var Generator = module.exports = function Generator(args, options, config) {
 
     update.check();
 
+    this.hookFor('kraken:model', {
+        args: args,
+        options: {
+            options: options
+        }
+    });
+
     this.auth = options.auth;
     this.json = options.json;
 };
