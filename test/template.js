@@ -29,7 +29,8 @@ describe('Template', function () {
 
     var options = new BaseOptions('template');
     options.dependencies = [
-        '../../template'
+        '../../template',
+        '../../locale'
     ];
     options.prompt = {};
     options.args = ['Foo'];
