@@ -28,7 +28,10 @@ var runGenerator = require('./util/generator').runGenerator,
 describe('Controller', function () {
     var options = new BaseOptions('controller');
     options.dependencies = [
-        '../../controller'
+        '../../controller',
+        '../../model',
+        '../../template',
+        '../../locale'
     ];
     options.args = ['Foo'];
     options.prompt = {json: false};
