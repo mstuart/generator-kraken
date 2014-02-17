@@ -60,7 +60,7 @@ describe('Controller', function () {
         options.prompt.json = true;
         runGenerator(options, function (err) {
             helpers.assertFiles([
-                ['controllers/Foo.js', /res.format/]
+                ['controllers/Foo.js', /req.xhr/]
             ]);
 
             done(err);
