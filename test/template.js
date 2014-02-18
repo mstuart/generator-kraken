@@ -36,10 +36,11 @@ describe('Template', function () {
     options.args = ['Foo'];
 
 
-    it('creates new templates', function (done) {
+    it('creates new template and content bundle', function (done) {
         runGenerator(options, function (err) {
             helpers.assertFiles([
-                'public/templates/Foo.dust'
+                'public/templates/Foo.dust',
+                'locales/US/en/Foo.properties'
             ]);
 
             done(err);
