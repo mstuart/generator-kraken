@@ -48,9 +48,12 @@ describe('Controller', function () {
     });
 
 
-    it('creates new tests', function (done) {
+    it('creates a model, template, content bundle, and tests', function (done) {
         runGenerator(options, function (err) {
             helpers.assertFiles([
+                'models/Foo.js',
+                'public/templates/Foo.dust',
+                'locales/US/en/Foo.properties',
                 'test/Foo.js'
             ]);
 
